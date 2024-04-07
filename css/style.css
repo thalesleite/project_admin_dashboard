@@ -5,7 +5,7 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 2fr 5fr;
+  grid-template-columns: 2fr 6fr;
   grid-template-rows: 180px 1fr;
   grid-template-areas:
     "sidebar header"
@@ -14,8 +14,13 @@ body {
 }
 
 .sidemenu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 130px repeat(5, 60px) 100px repeat(3, 60px);
   grid-area: sidebar;
-  background-color: aqua;
+  background-color: #1992d4;
+  color: white;
+  padding-left: 20px;
 }
 
 .header {
@@ -31,6 +36,7 @@ body {
     "projects announcements"
     "projects trends";
   grid-area: main;
+  background-color: #e2e8f0;
 }
 
 .projects {
